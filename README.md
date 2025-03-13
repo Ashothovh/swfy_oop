@@ -48,7 +48,20 @@ HEADERS: Content-Type: application/json
 ```       
 
 ## Features
-### 1. **User Login**
+### 1. **User Register**
+URL: /api/register
+Method: POST
+Headers: Content-Type: application/json
+Request Body:
+```bash
+{
+    "email": "jobs@example.com",
+    "password": "password123",
+    "role": "admin" // or "user"
+}
+```
+
+### 2. **User Login**
 URL: /api/login
 Method: POST
 Headers: Content-Type: application/json
