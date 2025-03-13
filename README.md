@@ -1,12 +1,12 @@
-# PHP OOP Test Task (No Frameworks)
+# PHP SWFY Tech Task (Pure PHP, No Frameworks)
 
-This is a **pure PHP web application** implementing a basic authentication system with **login, user roles, and an API endpoint**.
+This is a **pure PHP web application** implementing an authentication system with **login, user roles, and an API endpoint**.
 
 ## Features
 - ✅ User **Login & Logout**
-- ✅ User **Roles & Permissions**
+- ✅ User **Roles & Permissions** / used middleware
 - ✅ No any framework
-- ✅ Uses **Object-Oriented Programming (OOP)** principles
+- ✅ Uses **Object-Oriented Programming (OOP)** 
 - ✅ **Database Integration (MySQL)**
 - ✅ **Autoloading** via **Composer**
 
@@ -21,7 +21,7 @@ cd swfy_oop
 composer install
 create a database "swfy"
 Import the database.sql file:
-
+```
 ## Features
 ### 1. **User Login**
 URL: /api/login
