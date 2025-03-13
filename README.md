@@ -23,11 +23,29 @@ create a database "swfy"
 Import the database.sql file:
 ```
 ## Endpoints
-### ✅ POST ```bash /api/register  / body: {"name": "Steve", "email": "steve@example.com", "password": "steve123!"} ```
-### ✅ POST ```bash /api/login     / body: {"email": "jobs@example.com", "password": "password123"}  / HEADERS: Content-Type: application/json ```
-### ✅ POST ```bash /api/logout ``` 
-### ✅ GET ```bash /api/admin ```       
-### ✅ GET ```bash /api/user ```       
+### ✅ POST 
+```bash 
+/api/register
+body: {"name": "Steve", "email": "steve@example.com", "password": "steve123!"}
+```
+### ✅ POST 
+```bash
+/api/login     
+body: {"email": "jobs@example.com", "password": "password123"}
+HEADERS: Content-Type: application/json
+```
+### ✅ POST 
+```bash 
+/api/logout
+``` 
+### ✅ GET 
+```bash 
+/api/admin
+```       
+### ✅ GET 
+```bash
+/api/user 
+```       
 
 ## Features
 ### 1. **User Login**
