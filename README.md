@@ -22,6 +22,13 @@ composer install
 create a database "swfy"
 Import the database.sql file:
 ```
+## Endpoints
+### POST /api/register  / body: {"name": "Steve", "email": "steve@example.com", "password": "steve123!"}
+### POST /api/login     / body: {"email": "jobs@example.com", "password": "password123"}  / HEADERS: Content-Type: application/json
+### POST /api/logout 
+### GET /api/admin      
+### GET /api/user       
+
 ## Features
 ### 1. **User Login**
 URL: /api/login
@@ -30,27 +37,30 @@ Headers: Content-Type: application/json
 Request Body:
 ```bash
 {
-    "email": "john@example.com",
+    "email": "jobs@example.com",
     "password": "password123"
 }
-
+```
 ### Response:
 ✅ 200 OK (Login successful)
+```bash
 {
     "message": "Login successful",
     "user": {
         "id": 1,
-        "name": "John Doe",
-        "email": "john@example.com",
+        "name": "Steve Jobs",
+        "email": "steve@example.com",
         "role": "admin",
         "created_at": "2025-03-13 10:00:00"
     }
 }
+```
 Or
 ❌ 401 Unauthorized (Invalid credentials)
+```bash
 {
     "error": "Invalid credentials"
 }
-
+```
 
 
