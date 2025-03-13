@@ -44,7 +44,7 @@ HEADERS: Content-Type: application/json
 ```       
 ### ✅ GET 
 ```bash
-/api/user 
+/api/user (just showing the first user for test case only)
 ```       
 
 ## Features
