@@ -34,6 +34,10 @@ class User {
 
     public static function create(string $name, string $email, string $password, string $role = 'user'): bool {
         $db = Database::connect();
+
+        // PASSWORD_DEFAULT is automatically selects the strongest and most
+        // secure hashing algorithm available in current PHP version.
+        // For ex. in PHP 8.2, PASSWORD_DEFAULT uses bcrypt (PASSWORD_BCRYPT).
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
         $stmt = $db->prepare("INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)");
